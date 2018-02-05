@@ -6,10 +6,10 @@
 name: Arun's Blog
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Programming Enthusiastic 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars2.githubusercontent.com/u/2822841?s=400&u=910ae2818a9c7dd67fc48089faec4940886a7c73&v=4
 
 #
 # Flags below are optional
@@ -18,23 +18,23 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: arungupta143@gmail.com
+  facebook: arungupta2008
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
+  github: arungupta2008
+  instagram: arungupta2008
+  linkedin:arungupta2008
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: arungupta2008
+  stackoverflow: /users/1503870/merom
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: +ARUNGUPTA2008
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus:arungupta2008
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
