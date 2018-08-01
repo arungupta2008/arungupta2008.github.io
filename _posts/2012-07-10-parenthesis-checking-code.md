@@ -1,0 +1,36 @@
+---
+id: 35
+title: Parenthesis Checking Code
+date: 2012-07-10T19:32:00+00:00
+author: Arun
+layout: post
+guid: http://arungupta.co.in/blog/?p=35
+permalink: /?p=35
+blogger_blog:
+  - arungupta1.blogspot.com
+blogger_permalink:
+  - /2012/07/parenthesis-checking-code.html
+categories:
+  - Uncategorized
+---
+<div dir="ltr" style="text-align: left;" trbidi="on">
+  Hi Friends &#8230;. happy to see again<br />i made a code of  Parenthesis Checking it&#8217;s order is of the order is only O(n)<br />see this code and enjoy really &#8230;&#8230;.     cc Arun Kumar Gupta Only.</p> 
+  
+  <p>
+    import java.util.*;<br />import java.lang.*;<br />import java.io.*;
+  </p>
+  
+  <p>
+    public class Stack<br /> {<br /><span style="white-space: pre;"> </span>public static void main (String [] args)<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;"> </span>System.out.println(&#8220;Entere Combination&#8221;);<br /><span style="white-space: pre;"> </span>String Input = sc.next();
+  </p>
+  
+  <p>
+    <span style="white-space: pre;"> </span>System.out.println(&#8220;Entered Values \t&#8221; + Input);<br /><span style="white-space: pre;"> </span> int len =Input.length();<br /><span style="white-space: pre;"> </span>char[] iArray = Input.toCharArray();<br /><span style="white-space: pre;"> </span>String cArray[] = new String[len];<br /><span style="white-space: pre;"> </span>for(int j = 0 ; j < len ; j++)<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span> <br /><span style="white-space: pre;"> </span>cArray[j] =Character.toString(iArray[j]) ;<br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span> int l =0, m=0 ,u =0;<br /><span style="white-space: pre;"> </span> int ru = 0, rm= 0, rl = 0 ;<br /><span style="white-space: pre;"> </span>String upper1 = &#8220;[&#8221; ;<br /><span style="white-space: pre;"> </span>String middle1 = &#8220;{&#8221; ;<br /><span style="white-space: pre;"> </span>String lower1 = &#8220;(&#8221; ;<br /><span style="white-space: pre;"> </span>String upper2 = &#8220;]&#8221; ;<br /><span style="white-space: pre;"> </span>String middle2 = &#8220;}&#8221; ;<br /><span style="white-space: pre;"> </span>String lower2 = &#8220;)&#8221; ;<br /><span style="white-space: pre;"> </span>for(int j = 0 ; j < len ; j++)<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>System.out.print(&#8220;\t&#8221;+cArray[j]);<br /><span style="white-space: pre;"> </span>}<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>System.out.print(&#8220;\n&#8221;);<br /><span style="white-space: pre;"> </span>for(int j = 0 ; j < len ; j++)<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>//System.out.print(&#8220;\t&#8221;+cArray[j]);<br /><span style="white-space: pre;"> </span>if(cArray[j].equals(upper1))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>//System.out.print(&#8220;i am here [&#8220;);<br /><span style="white-space: pre;"> </span>++u;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>ru = 1;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>rm= 0;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>rl =0;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>if(cArray[j].equals(middle1))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>++m;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>rm =1;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>ru = 0;<br /><span style="white-space: pre;"> </span>rl = 0;<br /><span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>if(cArray[j].equals(lower1))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>++l;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>rl =1;<br /><span style="white-space: pre;"> </span>ru = 0;<br /><span style="white-space: pre;"> </span>rm = 0;<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>if(cArray[j].equals(upper2))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>u = u-1;<br /><span style="white-space: pre;"> </span>if((rm == 0) && (rl == 0))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>ru= 0;<br /><span style="white-space: pre;"> </span>}<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>if(cArray[j].equals(middle2))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>m = m-1;<br /><span style="white-space: pre;"> </span>if((ru == 0) && (rl == 0))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>rl = 0;<br /><span style="white-space: pre;"> </span>}<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>if(cArray[j].equals(lower2))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>l = l-1;<br /><span style="white-space: pre;"> </span>if((rm == 0) && (ru == 0))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>rl = 0;<br /><span style="white-space: pre;"> </span>}<span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span><br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>System.out.println(&#8221; Count Upper   :&#8221; +u+&#8221;\n&#8221; );<br /><span style="white-space: pre;"> </span>System.out.println(&#8221; Count Middle   :&#8221; +m+ &#8220;\n&#8221;);<br /><span style="white-space: pre;"> </span>System.out.println(&#8221; Count Lower   :&#8221; +l+ &#8220;\n&#8221;);<br /><span style="white-space: pre;"> </span>if((u == 0)&&(m ==0)&&(l ==0))<br /><span style="white-space: pre;"> </span>{<br /><span style="white-space: pre;"> </span>System.out.println(&#8220;Everything is ok !!!! No error&#8221;);<br /><span style="white-space: pre;"> </span>}<br /><span style="white-space: pre;"> </span>else<br /><span style="white-space: pre;"> </span>System.out.println(&#8220;Some Error is there &#8220;);
+  </p>
+  
+  <p>
+    <span style="white-space: pre;"> </span>}
+  </p>
+  
+  <p>
+    }</div>
